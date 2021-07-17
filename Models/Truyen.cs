@@ -12,18 +12,20 @@ namespace Doctruyenchua.Models
         [Required]
         public AppUser User { get; set; }
         public string TenTruyen { get; set; }
-        [Display(Name = "Ảnh bìa truyện: ")]
+        [Display(Name = "Ảnh bìa truyện: (link)")]
         public string AnhBia { get; set; }
         [Required]
         public string TacGia { get; set; }
         [Required]
         public TheLoai TheLoai { get; set; }
-        [StringLength(255)]
+        [StringLength(int.MaxValue)]
         [Display(Name = "Mô tả truyện: ")]
         public string MoTaNgan { get; set; }
         [Display(Name = "Ngày đăng: ")]
         public DateTime DateTime { get; set; }
-        
+
+        public virtual ICollection<Chuong> Chuongs { get; set; }
+
 
     }
 }
