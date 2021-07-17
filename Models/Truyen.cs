@@ -10,6 +10,7 @@ namespace Doctruyenchua.Models
     {
         public int Id { get; set; }
         [Required]
+        public AppUser User { get; set; }
         public string TenTruyen { get; set; }
         [Display(Name = "Ảnh bìa truyện: ")]
         public string AnhBia { get; set; }

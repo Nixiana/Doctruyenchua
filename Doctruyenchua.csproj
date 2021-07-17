@@ -181,6 +181,10 @@
     <Compile Include="Migrations\202107111439189_CreateTableTruyen.Designer.cs">
       <DependentUpon>202107111439189_CreateTableTruyen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202107171439169_addTableStatistic.cs" />
+    <Compile Include="Migrations\202107171439169_addTableStatistic.Designer.cs">
+      <DependentUpon>202107171439169_addTableStatistic.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -188,6 +192,7 @@
     <Compile Include="Models\Chuong_hinhanh.cs" />
     <Compile Include="Models\AppUser.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Statistic.cs" />
     <Compile Include="Models\TheLoai.cs" />
     <Compile Include="Models\Truyen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -272,6 +277,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202107111439189_CreateTableTruyen.resx">
       <DependentUpon>202107111439189_CreateTableTruyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107171439169_addTableStatistic.resx">
+      <DependentUpon>202107171439169_addTableStatistic.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
