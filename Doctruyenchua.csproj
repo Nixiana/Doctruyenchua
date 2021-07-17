@@ -185,6 +185,14 @@
     <Compile Include="Migrations\202107171439169_addTableStatistic.Designer.cs">
       <DependentUpon>202107171439169_addTableStatistic.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202107171447043_addTableStatistic2.cs" />
+    <Compile Include="Migrations\202107171447043_addTableStatistic2.Designer.cs">
+      <DependentUpon>202107171447043_addTableStatistic2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107171451324_PopulateCategoryTable.cs" />
+    <Compile Include="Migrations\202107171451324_PopulateCategoryTable.Designer.cs">
+      <DependentUpon>202107171451324_PopulateCategoryTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -280,6 +288,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202107171439169_addTableStatistic.resx">
       <DependentUpon>202107171439169_addTableStatistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107171447043_addTableStatistic2.resx">
+      <DependentUpon>202107171447043_addTableStatistic2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107171451324_PopulateCategoryTable.resx">
+      <DependentUpon>202107171451324_PopulateCategoryTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

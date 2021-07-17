@@ -13,6 +13,7 @@ namespace Doctruyenchua.Models
         public DbSet<Chuong> chuongs { get; set; }
         public DbSet<TheLoai> theLoais { get; set; }
         public DbSet<Chuong_hinhanh> chuong_Hinhanhs { get; set; }
+        public DbSet<Statistic> statistics { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
