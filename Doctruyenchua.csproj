@@ -168,7 +168,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
-    <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\HomeAdminController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -200,6 +200,10 @@
     <Compile Include="Migrations\202107171710188_fixStringLengthMoTaTruyen.Designer.cs">
       <DependentUpon>202107171710188_fixStringLengthMoTaTruyen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202107200408593_fixTruyen.cs" />
+    <Compile Include="Migrations\202107200408593_fixTruyen.Designer.cs">
+      <DependentUpon>202107200408593_fixTruyen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -212,6 +216,7 @@
     <Compile Include="Models\Truyen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\TruyenViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\admin\css\sb-admin-2.css" />
@@ -2129,11 +2134,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Truyen\Create.cshtml" />
     <Content Include="Views\Truyen\Delete.cshtml" />
     <Content Include="Views\Truyen\Details.cshtml" />
     <Content Include="Views\Truyen\Edit.cshtml" />
     <Content Include="Views\Truyen\Index.cshtml" />
+    <Content Include="Views\Truyen\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -2170,6 +2175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202107171710188_fixStringLengthMoTaTruyen.resx">
       <DependentUpon>202107171710188_fixStringLengthMoTaTruyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107200408593_fixTruyen.resx">
+      <DependentUpon>202107200408593_fixTruyen.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

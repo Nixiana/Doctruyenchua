@@ -3,32 +3,34 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
+using Doctruyenchua.Models;
 
-namespace Doctruyenchua.Models
+namespace Doctruyenchua.ViewModels
 {
-    public class Truyen
+    public class TruyenViewModel
     {
-        public int Id { get; set; }
-        [Required]
-        public AppUser User { get; set; }
         [Required]
         [Display(Name = "Tên truyện")]
         public string TenTruyen { get; set; }
+        [Required]
         [Display(Name = "Ảnh bìa truyện: (link)")]
         public string AnhBia { get; set; }
-        [Required]
         [Display(Name = "Tác giả")]
         public string TacGia { get; set; }
         [Required]
-        public TheLoai TheLoai { get; set; }
         [StringLength(int.MaxValue)]
         [Display(Name = "Mô tả truyện: ")]
         public string MoTaNgan { get; set; }
-        [Display(Name = "Ngày đăng: ")]
-        public DateTime DateTime { get; set; }
+        [Required]
+        public string Date { get; set; }
+        public string Time { get; set; }
+        [Required]
+        public byte TheLoai { get; set; }
+        public IEnumerable<TheLoai> theLoais { get; set; }
 
-        public virtual ICollection<Chuong> Chuongs { get; set; }
-
-
+        public DateTime GetDateTime()
+        {
+            return DateTime.Parse(string.Format("{0} {1}", Date, Time));
+        }
     }
 }
